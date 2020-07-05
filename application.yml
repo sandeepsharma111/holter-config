@@ -1,0 +1,11 @@
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: ${EDUCATION_EUREKA_SERVER:http://localhost:1337/eureka/}
+    # improve refresh time
+    registryFetchIntervalSeconds: 5
+  # improve refresh time
+  instance.leaseRenewalIntervalInSeconds: 5
+  server.response-cache-update-interval-ms: 1000
