@@ -9,3 +9,14 @@ eureka:
   # improve refresh time
   instance.leaseRenewalIntervalInSeconds: 5
   server.response-cache-update-interval-ms: 1000
+  
+jwt:
+    expiration: 3600
+    header: Authorization
+    issuer: holter.io
+    prefix: Bearer
+    route:
+      authentication:
+        create: /login
+        refresh: /refresh
+    secret: my^hol67TR
