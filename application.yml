@@ -17,6 +17,6 @@ jwt:
     prefix: Bearer
     route:
       authentication:
-        create: /login
+        create: /sandeep
         refresh: /refresh
     secret: my^hol67TR
