@@ -20,3 +20,13 @@ jwt:
         create: /sandeep
         refresh: /refresh
     secret: my^hol67TR
+    
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/holter?autoReconnect=true&serverTimezone=UTC&createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+    username: root
+    password: sandeep
+    platform: mysql
+  jpa:
+    hibernate:
+      ddl-auto: update
