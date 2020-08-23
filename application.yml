@@ -33,4 +33,4 @@ spring:
 
 holter:
   apigateway:
-    url: http://localhost:8090
+    url: localhost:8090
