@@ -30,3 +30,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+
+holter:
+  apigateway:
+    url: http://localhost:8090/
