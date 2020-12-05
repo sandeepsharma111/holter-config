@@ -34,3 +34,15 @@ spring:
 holter:
   apigateway:
     url: localhost:8090
+    
+cardio:
+  config:
+    aws:
+      region: ap-south-1
+      accessKey: ENC(5LPEc5Qt/h/WhX9g01UgvRyPmd+MxQzT2MletVYQ02U=)
+      secretKey: ENC(n4pwMuEvx97LgwfHl6FyKKGj4H9YVgtJvmHw8qXFrvJyv/19GKHMDij/CJqPBYr2wsUwlKYhI48=)
+    
+    bucket: cardio-dev-assets
+jasypt:
+ encryptor:
+  password: Cardio-Secret-!290Dev
