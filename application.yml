@@ -23,7 +23,7 @@ jwt:
     
 spring:
   datasource:
-    url: jdbc:mysql://65.1.169.141:3306/holter?autoReconnect=true&serverTimezone=UTC&createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+    url: jdbc:mysql://localhost:3306/holter?autoReconnect=true&serverTimezone=UTC&createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
     username: root
     password: sandeep
     platform: mysql
