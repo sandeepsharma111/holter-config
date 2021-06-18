@@ -10,17 +10,17 @@ eureka:
   instance.leaseRenewalIntervalInSeconds: 5
   server.response-cache-update-interval-ms: 1000
 link:
-    expiration: 3600  
+  expiration: 3600  
 jwt:
-    expiration: 3600
-    header: Authorization
-    issuer: holter.io
-    prefix: Bearer
-    route:
-      authentication:
-        create: /sandeep
-        refresh: /refresh
-    secret: my^hol67TR
+  expiration: 3600
+  header: Authorization
+  issuer: holter.io
+  prefix: Bearer
+  route:
+    authentication:
+      create: /sandeep
+      refresh: /refresh
+  secret: my^hol67TR
     
 spring:
   datasource:
