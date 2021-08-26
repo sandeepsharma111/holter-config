@@ -10,17 +10,17 @@ eureka:
   instance.leaseRenewalIntervalInSeconds: 5
   server.response-cache-update-interval-ms: 1000
 link:
-  expiration: 3600  
+    expiration: 3600  
 jwt:
-  expiration: 3600
-  header: Authorization
-  issuer: holter.io
-  prefix: Bearer
-  route:
-    authentication:
-      create: /sandeep
-      refresh: /refresh
-  secret: my^hol67TR
+    expiration: 3000
+    header: Authorization
+    issuer: holter.io
+    prefix: Bearer
+    route:
+      authentication:
+        create: /sandeep
+        refresh: /refresh
+    secret: my^hol67TR
     
 spring:
   datasource:
@@ -31,11 +31,12 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-
+  main.allow-bean-definition-overriding: true
 holter:
   apigateway:
     url: localhost:8090
-    
+  username: admin
+  password: sandeep
 cardio:
   config:
     aws:
@@ -47,3 +48,13 @@ cardio:
 jasypt:
  encryptor:
   password: Cardio-Secret-!290Dev
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+bitrhythm:
+ username: Mediprimeadmin
+ password: PrimeKav@686868ieieie
