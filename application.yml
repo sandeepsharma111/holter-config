@@ -58,3 +58,10 @@ management:
 bitrhythm:
  username: Mediprimeadmin
  password: PrimeKav@686868ieieie
+ 
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 60000
+        readTimeout: 90000
